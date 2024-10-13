@@ -1,0 +1,3 @@
+######## Components #########
+
+components are independent and reusable bits of code. they serve the same purpose as js function but work in isolation and return html/jsx
