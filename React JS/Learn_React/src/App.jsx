@@ -12,9 +12,13 @@ import { useState } from "react";
 import Counter from "./components/Counter";
 import Todo from "./components/Todo";
 import CopyInput from "./components/CopyInput";
+import FetchData from "./components/FetchData";
+import A from "./components/A";
+import { UserProvider } from "./components/Context";
+import C from "./components/C";
 
 const App = () => {
-  const myName = "Zulfiqar Ali";
+  const myName = "Zulfiqar Ali Khokhar ";
 
   const multiply = (a, b) => a * b;
 
@@ -22,6 +26,12 @@ const App = () => {
 
   const onClickHandler = () => {
     setCount(count + 1);
+  };
+
+  const updateName = () => {
+    setPerson((prev) => {
+      return { ...prev, name };
+    });
   };
 
   return (
@@ -34,7 +44,7 @@ const App = () => {
       <h1>{multiply(2, 4)}</h1>
       <ProductInfo></ProductInfo>
       <List></List> */}
-      <UserList></UserList>
+      {/* <UserList></UserList>
       <Person name="Zulfiqar Ali" age={25} role="MERN Developer"></Person>
       <Card>
         <h1>This is my first Card Data</h1>
@@ -43,7 +53,11 @@ const App = () => {
       <StateComponent></StateComponent>
       <Counter count={count} onClickHandler={onClickHandler}></Counter>
       <Todo></Todo>
-      <CopyInput></CopyInput>
+      <CopyInput></CopyInput> */}
+      {/* <FetchData></FetchData> */}
+      <UserProvider>
+        <C></C>
+      </UserProvider>
     </>
   );
 };
