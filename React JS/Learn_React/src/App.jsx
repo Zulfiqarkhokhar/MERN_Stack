@@ -16,6 +16,7 @@ import FetchData from "./components/FetchData";
 import A from "./components/A";
 import { UserProvider } from "./components/Context";
 import C from "./components/C";
+import BasicUseReducer from "./components/BasicUseReducer";
 
 const App = () => {
   const myName = "Zulfiqar Ali Khokhar ";
@@ -55,9 +56,10 @@ const App = () => {
       <Todo></Todo>
       <CopyInput></CopyInput> */}
       {/* <FetchData></FetchData> */}
-      <UserProvider>
+      {/* <UserProvider>
         <C></C>
-      </UserProvider>
+      </UserProvider> */}
+      <BasicUseReducer></BasicUseReducer>
     </>
   );
 };
