@@ -17,6 +17,10 @@ import A from "./components/A";
 import { UserProvider } from "./components/Context";
 import C from "./components/C";
 import BasicUseReducer from "./components/BasicUseReducer";
+import FocusInput from "./components/FocusInput";
+import Timer from "./components/Timer";
+import CustomHook from "./components/CustomHook";
+import UniqueId from "./components/UniqueId";
 
 const App = () => {
   const myName = "Zulfiqar Ali Khokhar ";
@@ -60,6 +64,13 @@ const App = () => {
         <C></C>
       </UserProvider> */}
       <BasicUseReducer></BasicUseReducer>
+      <br />
+      <FocusInput></FocusInput>
+      <br />
+      <Timer></Timer>
+      <br />
+      {/* <CustomHook></CustomHook> */}
+      <UniqueId></UniqueId>
     </>
   );
 };
