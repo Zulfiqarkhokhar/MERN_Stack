@@ -117,3 +117,5 @@ your components more readable and maintainable.
 
 The useId hook in react is used to generate unique
 IDs for components
+
+######## Redux #########
