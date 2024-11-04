@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "devStart": "nodemon app.js"
   },
@@ -10,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
     "mongodb": "^6.10.0",
     "mongoos": "^0.0.1-security",
     "mongoose": "^8.8.0"
