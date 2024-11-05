@@ -21,7 +21,11 @@ const Todo = () => {
     axios
       .put("http://localhost:5001/update/" + id)
       .then((result) => {
-        location.reload();
+        setTodos(
+          todos.map((todo) =>
+            todo._id === id ? { ...todo, done: !todo.done } : todo
+          )
+        );
       })
       .catch((err) => console.log(err));
   };
@@ -29,7 +33,7 @@ const Todo = () => {
     axios
       .delete("http://localhost:5001/delete/" + id)
       .then((result) => {
-        location.reload();
+        setTodos(todos.filter((todo) => todo._id !== id));
       })
       .catch((err) => console.log(err));
   };
