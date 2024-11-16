@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        color: yellow;
+      }
+      /* element selector */
+      h1 {
+        color: red;
+      }
+      p {
+        color: teal;
+      }
+      /* id selector */
+      #firstDiv {
+        color: blue;
+      }
+      #secondDiv {
+        color: orange;
+      }
+      /* class selector */
+      .btn {
+        color: tomato;
+      }
+
+      /* group selector */
+
+      h1,
+      h2,
+      h3 {
+        color: silver;
+      }
+
+      /* decendent selector */
+
+      .myDiv h1{
+        color: magenta;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is Heading</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur,
+      expedita. Sit corporis in sapiente voluptatem vel animi sequi,
+    </p>
+    <div id="firstDiv">First div</div>
+    <div id="secondDiv">Second div</div>
+    <div class="btn">Button</div>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+
+    <div class="myDiv">
+        <h1>this first child</h4>
+    </div>
+  </body>
+</html>
