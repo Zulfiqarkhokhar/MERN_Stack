@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display and Position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: olivedrab;
+        margin: 5px;
+        text-align: center;
+        display: inline-block;
+      }
+      #box2 {
+        display: none;
+      }
+
+      /* relative unit: Percentage */
+      .parent {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        font-size: 35px;
+      }
+      .child {
+        width: 50%;
+        height: 50%;
+        /* font-size: 2.5em; with parent size */
+        font-size: 2rem; /* with root size */
+        background-color: green;
+      }
+      .myBox {
+        width: 50vw;
+        height: 50vh;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    Bodys
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div class="parent">
+      parent
+      <div class="child">child</div>
+    </div>
+    <div class="myBox">ViewPort</div>
+  </body>
+</html>

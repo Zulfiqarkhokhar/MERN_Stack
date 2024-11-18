@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex and Grid</title>
+    <style>
+      .container {
+        width: 50%;
+        height: 200px;
+        border: 3px solid;
+      }
+      .box1 {
+        width: 200px;
+        height: 180px;
+        background-color: blue;
+        margin: 10px;
+        float: right;
+      }
+      .box2 {
+        width: 200px;
+        height: 180px;
+        background-color: red;
+        margin: 10px;
+        float: left;
+      }
+      .container2 {
+        width: 50%;
+        height: 400px;
+        border: 3px solid;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        border: 3px solid;
+        margin: 2px;
+      }
+      #b1 {
+        background-color: blueviolet;
+      }
+
+      #b2 {
+        background-color: brown;
+      }
+      #b3 {
+        background-color: chartreuse;
+      }
+      #b4 {
+        background-color: crimson;
+      }
+      #b5 {
+        background-color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <div class="container2">
+      <div id="b1" class="box">Item1</div>
+      <div id="b2" class="box">Item1</div>
+      <div id="b3" class="box">Item1</div>
+      <div id="b4" class="box">Item1</div>
+      <div id="b4" class="box">Item1</div>
+
+      <div id="b4" class="box">Item1</div>
+
+      <div id="b4" class="box">Item1</div>
+    </div>
+  </body>
+</html>
